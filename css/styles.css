@@ -1,0 +1,47 @@
+/*General style*/
+body {
+  font-family: Open Sans, sans-serif;
+}
+
+/*Header*/
+.container {
+  padding: 15px;
+}
+
+.container .helbiz-logo {
+  padding-top: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header ul li {
+  display: inline-block;
+  padding: 5px;
+}
+
+.lang ul li a {
+  border-right: 1px solid black;
+  padding: 10px;
+}
+
+
+
+
+/*Responsive*/
+/*MAX 767PX*/
+@media screen and (max-width: 767px) {
+  ul li a {
+    display: none;
+  }
+}
+
+
+/*FROM 768PX TO 991*/
+@media screen and (max-width: 991px) {
+  ul li a {
+    display: none;
+  }
+}
