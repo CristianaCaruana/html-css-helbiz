@@ -8,13 +8,13 @@ body {
   padding: 15px;
 }
 
-.container .helbiz-logo {
-  padding-top: 10px;
-}
-
 a {
   text-decoration: none;
   color: black;
+}
+
+.col-lg-2 img {
+  vertical-align: middle;
 }
 
 header ul li {
@@ -27,21 +27,143 @@ header ul li {
   padding: 10px;
 }
 
+/*Prima sezione*/
+.prima-sezione .container .col-12 img {
+  background-size: contain;
+  max-width: 100%;
+}
 
+.prima-sezione {
+  position: relative;
+}
 
+.box {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.prima-sezione .container  h1,
+.prima-sezione .container  p {
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
+
+.prima-sezione .container  h1 {
+  font-size: 40px;
+}
+
+.logo1 {
+  padding: 10px;
+  height: 60px;
+  margin-left: 150px;
+}
+
+.logo2 {
+  padding: 10px;
+  height: 60px;
+}
 
 /*Responsive*/
 /*MAX 767PX*/
 @media screen and (max-width: 767px) {
+  /*Header*/
   ul li a {
     display: none;
+  }
+
+  /*Prima sezione*/
+  .col-xs-12 {
+    width: 100%;
+  }
+
+  .prima-sezione .container .col-xs-12 img {
+    background-size: contain;
+    max-width: 100%;
+  }
+
+  .prima-sezione .container .col-xs-12 .box h1,
+  .prima-sezione .container .col-xs-12 .box p {
+    font-size: 15px;
+  }
+
+  .prima-sezione .container {
+    position: relative;
+  }
+
+  .logo1 {
+    padding: 10px;
+    height: 20px;
+    position: absolute;
+    left: 50;
+  }
+
+  .logo2 {
+    padding: 10px;
+    height: 20px;
+    position: absolute;
+    top: 100;
   }
 }
 
 
 /*FROM 768PX TO 991*/
 @media screen and (max-width: 991px) {
+  /*Header*/
   ul li a {
     display: none;
+  }
+
+  /*Prima sezione*/
+  .col-md-12 {
+    width: 100%;
+  }
+
+  .prima-sezione .container .col-12 img {
+    background-size: contain;
+    max-width: 100%;
+  }
+
+  .prima-sezione .container .col-12 .box h1,
+  .prima-sezione .container .col-12 .box p {
+    font-size: 70%;
+  }
+
+  .prima-sezione {
+    position: relative;
+  }
+
+  .logo1 {
+    padding: 10px;
+    height: 40px;
+    position: absolute;
+    top: 100;
+    left: 10%;
+  }
+
+  .logo2 {
+    padding: 10px;
+    height: 40px;
+    position: absolute;
+    top: 100;
+    left: 20%;
+  }
+}
+
+
+@media screen and (min-width: 992px) {
+  /*Header*/
+  .col-lg-6 {
+    width: calc((100% / 12) * 6);
+  }
+
+  .col-lg-2 {
+    width: calc((100% / 12) * 2);
+  }
+
+  .col-lg-12 {
+    width: 100%;
   }
 }
